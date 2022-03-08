@@ -1,3 +1,5 @@
+Código feito pro Gustavo Neitzke - https://youtu.be/42TShjXR0m0
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -22,7 +24,7 @@
 
         .calculadora {
             position: absolute;
-            background-color: rgba(0, 0, 0, 0.8);
+            background-color: rgba(0, 0, 0, 1);
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
@@ -76,11 +78,7 @@
     <div class="fundo">
         <h1>Grupo 6:</h1>
         <li>Augusto Crisóstomo;</li>
-        <li>Bruno Eduardo;</li>
-        <li>Felipe Adryan;</li>
         <li>Guilherme Carvalho;</li>
-        <li>Leonardo;</li>
-        <li>Pedro Lucas.</li>
         <div class="calculadora">
             <h1>Calculadora</h1>
             <p id="resultado"></p>
