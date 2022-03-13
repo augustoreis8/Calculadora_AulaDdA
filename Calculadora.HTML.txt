@@ -71,6 +71,11 @@ Código feito pro Gustavo Neitzke - https://youtu.be/42TShjXR0m0
             text-align: left;
             padding: 5px;
         }
+
+        #Ans {
+            text-align: right;
+            color: blue;
+        }
     </style>
 </head>
 
@@ -78,7 +83,9 @@ Código feito pro Gustavo Neitzke - https://youtu.be/42TShjXR0m0
     <div class="fundo">
         <h1>Grupo 6:</h1>
         <li>Augusto Crisóstomo;</li>
-        <li>Guilherme Carvalho;</li>
+        <li>Felipe Adryan;</li>
+        <li>Bruno Eduardo.</li>
+        <p id="Ans"></p>
         <div class="calculadora">
             <h1>Calculadora</h1>
             <p id="resultado"></p>
@@ -111,6 +118,10 @@ Código feito pro Gustavo Neitzke - https://youtu.be/42TShjXR0m0
                     <td><button class="botao" onclick="insert('Ans')">Ans</button></td>
                     <td><button class="botao" onclick="calcular('')">=</button></td>
                 </tr>
+                <tr>
+                    <td colspan="5"><button class="botao" style="width: 274px;" onclick="insert('**-1')">x-¹</button>
+                    </td>
+                </tr>
             </table>
         </div>
     </div>
@@ -127,9 +138,11 @@ Código feito pro Gustavo Neitzke - https://youtu.be/42TShjXR0m0
             document.getElementById('resultado').innerHTML = resultado.substring(0, resultado.length - 1)
         }
         function calcular() {
+            var Ans = document.getElementById('Ans').innerHTML;
             var resultado = document.getElementById('resultado').innerHTML;
             if (resultado) {
                 document.getElementById('resultado').innerHTML = eval(resultado);
+                document.getElementById('Ans').innerHTML = eval(resultado);
             }
         }
     </script>
